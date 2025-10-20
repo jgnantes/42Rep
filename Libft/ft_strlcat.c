@@ -10,17 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include <stdio.h>
-#include <string.h>
-*/
+#include <stddef.h>
 
-unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
+size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
-	unsigned int	i;
-	unsigned int	j;
-	unsigned int	dest_len;
-	unsigned int	src_len;
+	size_t	i;
+	size_t	j;
+	size_t	dest_len;
+	size_t	src_len;
 
 	dest_len = 0;
 	while (dest[dest_len] != '\0')
@@ -43,6 +40,7 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 }
 
 /*
+#include <stdio.h>
 int	main()
 {
 	unsigned int size1;
