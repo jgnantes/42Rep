@@ -12,8 +12,8 @@
 
 #include <stdlib.h>
 
-int		ft_strlen(char *str);
-char	*ft_strcpy(char *dest, char *src);
+static char	*ft_strcpy(char *dest, const char *src);
+size_t		ft_strlen(const char *str);
 
 char	*ft_strdup(char *src)
 {
@@ -42,18 +42,6 @@ int	main(void)
 	printf("%s\n", strdup(string2));
 }
 */
-
-int	ft_strlen(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
-}
 
 char	*ft_strcpy(char *dest, char *src)
 {
