@@ -1,22 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jnantes- <jnantes-@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/21 10:54:43 by jnantes-          #+#    #+#             */
-/*   Updated: 2025/10/21 11:05:59 by jnantes-         ###   ########.fr       */
+/*   Created: 2025/10/21 12:19:09 by jnantes-          #+#    #+#             */
+/*   Updated: 2025/10/21 12:19:16 by jnantes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+void	*memcpy(void *dest, const void *src, size_t n)
+{
+	size_t	i;
+	unsigned char	*d;
+	const unsigned char	*s;
 
-# include <stdlib.h>
-# include <unistd.h>
-# include <stddef.h>
-
-int	ft_isalpha(int c);
-
-#endif
+	d = (unsigned char *)dest;
+	s = (const unsigned char *)src;
+	i = 0;
+	while (i < n)
+	{
+		d[i] = s[i];
+		i++;
+	}
+	return (dest);
+}
