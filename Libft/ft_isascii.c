@@ -18,7 +18,7 @@ int	ft_isascii(int c)
 		return (0);
 }
 
-/*
+
 #include <stdio.h>
 #include <ctype.h>
 int main(void)
@@ -35,4 +35,4 @@ int main(void)
 	c = isascii(1);
 	printf("or:%d\n", c);
 }
-*/
+
