@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 static char	*ft_strcpy(char *dest, const char *src);
 size_t		ft_strlen(const char *str);
@@ -43,7 +43,7 @@ int	main(void)
 }
 */
 
-char	*ft_strcpy(char *dest, char *src)
+static char	*ft_strcpy(char *dest, const char *src)
 {
 	int	i;
 

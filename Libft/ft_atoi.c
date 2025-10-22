@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {
@@ -43,6 +42,7 @@ int	ft_atoi(const char *str)
 }
 
 /*
+#include <stdio.h>
 int	main(void)
 {
 	int digit_i;
